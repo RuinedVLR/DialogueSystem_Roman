@@ -1,0 +1,5 @@
+File: Example Character Sheet.png
+Source: Unknown. I forgot where this came from and google image search comes up empty, I suspect It was sprites generated using 
+(Universal LPC Spritesheet Generator:  https://liberatedpixelcup.github.io/Universal-LPC-Spritesheet-Character-Generator/#sex=male&body=Body_Color_light&head=Human_Male_light&expression=Neutral_light
+
+Author: Unknown, I claim no ownership of this sprite, being used for education purposes only.
