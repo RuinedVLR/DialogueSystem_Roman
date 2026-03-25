@@ -4,8 +4,8 @@ using UnityEngine;
 public class Dialogue
 {
 
-    public string name;
+    public string _name;
 
     [TextArea(3, 10)]
-    public string[] sentences;
+    public string[] _sentences;
 }

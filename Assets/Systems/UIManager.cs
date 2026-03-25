@@ -5,7 +5,7 @@ using System.Collections;
 
 public class UIManager : MonoBehaviour
 {
-    [SerializeField] bool debugEnabled = false;
+    //[SerializeField] bool debugEnabled = false;
 
     [Header("Interact Prompt")]
     [SerializeField] private TMP_Text promptText;
@@ -22,10 +22,6 @@ public class UIManager : MonoBehaviour
     // reference TMP IMage
     [SerializeField] private GameObject dialoguePanel;
     [SerializeField] private TMP_Text dialogueText;
-
-
-
-
 
     private void Awake()
     {
