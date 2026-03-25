@@ -8807,6 +8807,7 @@ MonoBehaviour:
   _nameText: {fileID: 1496482443}
   _dialogueText: {fileID: 1055774198}
   _charPerSec: 20
+  _isInDialogue: 0
   _finishedDialogue: 0
 --- !u!1 &1220462167
 GameObject:
@@ -10066,8 +10067,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -273.53, y: 29}
-  m_SizeDelta: {x: -587.0697, y: -79.2038}
+  m_AnchoredPosition: {x: -142.0067, y: 55.767}
+  m_SizeDelta: {x: -324.023, y: -129.16}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1496482443
 MonoBehaviour:
