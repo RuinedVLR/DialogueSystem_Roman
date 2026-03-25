@@ -10476,11 +10476,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _dialogue:
-    _name: The Mystirious Gnome
+    _name: The Mysterious Gnome
     _sentences:
     - Well well well....
     - You found me.
-    - The Mystirious Gnome of Game Engine for Programmers II
+    - The Mysterious Gnome of Game Engine for Programmers II
     - Now... I shall rest and turn rainbow....
   _isRainbow: 1
   _rainbowSpeed: 10
