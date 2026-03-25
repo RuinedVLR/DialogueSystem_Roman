@@ -25,7 +25,8 @@ public class Interactable_Dialogue : MonoBehaviour, IInteractable
 
     public void Interact()
     {
-        _dialogueManager.StartDialogue(_dialogue);
+        if(!_dialogueManager._isInDialogue)
+            _dialogueManager.StartDialogue(_dialogue);
     }
 
     public void Update()

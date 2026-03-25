@@ -1,3 +1,4 @@
+using TMPro;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
@@ -10,6 +11,7 @@ public class PlayerMovementController : MonoBehaviour
 
     [SerializeField] private Animator playerAnimController;
 
+    private DialogueManager _dialogueManager;
 
 
     // Store Animator references using a hash for better performance
@@ -29,6 +31,7 @@ public class PlayerMovementController : MonoBehaviour
 
     private void Awake()
     {
+        _dialogueManager = ServiceHub.Instance.DialogueManager;
         playerRb = GetComponent<Rigidbody2D>();
         if(playerRb == null) Debug.LogError("Rigidbody2D component not found on the player object.");  
         
@@ -37,15 +40,17 @@ public class PlayerMovementController : MonoBehaviour
 
 
     private void Update()
-    {  
-        HandlePlayerAnimation();
+    {
+        if (!_dialogueManager._isInDialogue)
+            HandlePlayerAnimation();
 
 
     }
 
     private void FixedUpdate()
     {
-        HandlePlayerMovement();       
+        if(!_dialogueManager._isInDialogue)
+            HandlePlayerMovement();       
     }
 
     private void LateUpdate()

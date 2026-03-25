@@ -15,6 +15,7 @@ public class DialogueManager : MonoBehaviour
 
     public float _charPerSec;
 
+    public bool _isInDialogue;
     public bool _finishedDialogue;
 
     private void Start()
@@ -22,8 +23,16 @@ public class DialogueManager : MonoBehaviour
         _sentences = new Queue<string>();
     }
 
+    private void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.Space))
+            DisplayNextSentence();
+    }
+
     public void StartDialogue(Dialogue dialogue)
     {
+        _isInDialogue = true;
+
         _dialogueBox.SetActive(true);
         
         _sentences.Clear();
@@ -34,8 +43,6 @@ public class DialogueManager : MonoBehaviour
         {
             _sentences.Enqueue(sentence);
         }
-
-        DisplayNextSentence();
     }
 
     public void DisplayNextSentence()
@@ -64,6 +71,7 @@ public class DialogueManager : MonoBehaviour
 
     private void EndDialogue()
     {
+        _isInDialogue = false;
         _finishedDialogue = true;
         
         _dialogueBox.SetActive(false);
